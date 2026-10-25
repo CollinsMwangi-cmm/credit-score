@@ -1,0 +1,28 @@
+[project]
+name = "default-pred"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "CollinsMwangi-cmm", email = "donstewie58@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "beautifulsoup4>=4.15.0",
+    "openpyxl>=3.1.5",
+    "requests>=2.34.2",
+    "schedule>=1.2.2",
+]
+
+[project.scripts]
+default-pred = "default_pred:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=26.10.1",
+    "pytest>=9.1.1",
+]
